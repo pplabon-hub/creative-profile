@@ -15,7 +15,7 @@
 <path d="M102 69L552 87L528 463L78 444Z" fill="#C39B5A"/>
 <path d="M135 80L527 96L510 439L118 422Z" fill="#FFFCF5" stroke="#26312C" stroke-width="1.5"/>
 <g clip-path="url(#reflectPhoto)">
-  <image href="portrait-suit.jpg" x="115" y="75" width="415" height="370" preserveAspectRatio="xMidYMid slice"/>
+  <image href="portrait-suit.jpg" x="115" y="75" width="415" height="370" preserveAspectRatio="xMidYMin slice"/>
 </g>
 <path d="M135 80L527 96L510 439L118 422Z" fill="none" stroke="#26312C" stroke-width="1.5"/>
 <path d="M250 67L393 73L389 104L246 98Z" fill="#D8C9A9" opacity=".9"/>
