@@ -18,7 +18,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: creative-profile-motion-${{ github.ref }}
+  group: creative-profile-motion-v2-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

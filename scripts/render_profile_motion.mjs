@@ -76,6 +76,17 @@ try {
       await page.close();
     }
   }
+
+  // Switch README artwork to GIF only after all four renders completed.
+  const readmePath = path.join(root, "README.md");
+  let readme = fs.readFileSync(readmePath, "utf8");
+  for (const asset of assets) {
+    readme = readme.replaceAll(
+      'src="assets/' + asset.name + '.svg"',
+      'src="assets/' + asset.name + '.gif"'
+    );
+  }
+  fs.writeFileSync(readmePath, readme);
 } finally {
   await browser.close();
 }
