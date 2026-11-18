@@ -7,7 +7,9 @@ on:
     paths:
       - "assets/hero-index.svg"
       - "assets/curiosity-index.svg"
+      - "assets/workbench.svg"
       - "assets/closing-note.svg"
+      - "assets/portrait-hero.jpg"
       - "scripts/render_profile_motion.mjs"
       - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
@@ -22,7 +24,7 @@ concurrency:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       - name: Check out the preview branch
         uses: actions/checkout@v4
@@ -40,9 +42,9 @@ jobs:
         run: |
           npm init -y
           npm install --no-save --no-audit --no-fund playwright@1.65.0
-          npx playwright install --with-deps chromium
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg gifsicle
+          npx playwright install chromium
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg gifsicle libnss3 libatk1.0-0 libatk-bridge2.0-0 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 libcups2 libx11-xcb1 libxext6 libxshmfence1
 
       - name: Render animated profile panels
         run: node scripts/render_profile_motion.mjs
@@ -53,12 +55,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/hero-index.gif assets/curiosity-index.gif assets/closing-note.gif
+          git add README.md assets/hero-index.gif assets/curiosity-index.gif assets/workbench.gif assets/closing-note.gif
           if git diff --cached --quiet; then
             echo "Motion assets are already current."
             exit 0
           fi
-          git commit -m "Render animated profile artwork"
+          git commit -m "Render vibrant animated profile artwork"
           git fetch origin "$TARGET_BRANCH"
           git rebase "origin/$TARGET_BRANCH"
           git push origin "HEAD:$TARGET_BRANCH"

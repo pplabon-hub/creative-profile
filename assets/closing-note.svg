@@ -1,27 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" role="img" aria-labelledby="title desc">
-<title id="title">Let's make something useful</title>
-<desc id="desc">A warm editorial closing card with smoked glass accents and an invitation to explore the profile's repositories.</desc>
-<defs>
-  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#AAA0AE" stop-opacity=".34"/>
-    <stop offset="1" stop-color="#8C997A" stop-opacity=".12"/>
-  </linearGradient>
-  <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
-</defs>
-<rect width="1440" height="300" rx="12" fill="#E8E1D6"/>
-<path d="M58 56H1382" stroke="#211D24" stroke-opacity=".2"/>
-<text x="72" y="146" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="70">Let’s make something useful.</text>
-<text x="76" y="192" fill="#514A50" font-family="'Manrope', sans-serif" font-size="19">Open to good questions, thoughtful experiments and practical ideas.</text>
-<path d="M76 232H720" stroke="#211D24" stroke-opacity=".2"/>
-<path d="M76 232H720" stroke="#B64F3D" stroke-width="3">
-  <animate attributeName="d" values="M76 232H76;M76 232H720;M76 232H720" keyTimes="0;.45;1" dur="7s" repeatCount="indefinite"/>
-</path>
-<rect x="960" y="54" width="410" height="188" rx="20" fill="#211D24"/>
-<ellipse cx="1200" cy="126" rx="172" ry="110" fill="#B64F3D" opacity=".22" filter="url(#blur)">
-  <animate attributeName="cx" values="1168;1228;1168" dur="11s" repeatCount="indefinite"/>
-</ellipse>
-<rect x="980" y="74" width="370" height="148" rx="14" fill="url(#glass)" stroke="#F0EADF" stroke-opacity=".56"/>
-<text x="1010" y="122" fill="#F0EADF" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2">KEEP THE CONVERSATION OPEN</text>
-<text x="1010" y="170" fill="#F0EADF" font-family="'Fraunces', Georgia, serif" font-size="34">Explore the work <tspan fill="#B64F3D">↗</tspan></text>
-<text x="72" y="274" fill="#A97E61" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2">PPLABON-HUB  /  FIELD NOTES</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 340" role="img" aria-labelledby="title desc">
+<title id="title">Make ideas matter. Closing note.</title>
+<desc id="desc">A bold, bright closing card with shifting type, warm coral and teal accents, and an invitation to explore and collaborate.</desc>
+<rect width="1440" height="340" rx="16" fill="#FF704F"/>
+<circle cx="1325" cy="30" r="155" fill="#D9F45C"/>
+<circle cx="116" cy="302" r="115" fill="#45CDBD"/>
+<circle cx="1250" cy="274" r="84" fill="#5E5AE8"/>
+<text x="64" y="60" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="2.5" fill="#1B2032">THE NEXT CHAPTER IS ALWAYS OPEN</text>
+<text x="64" y="190" font-family="'Bricolage Grotesque',sans-serif" font-size="116" font-weight="800" letter-spacing="-4" fill="#1B2032">
+  Make ideas
+  <animateTransform attributeName="transform" type="translate" values="0 20;0 0;0 0" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/>
+</text>
+<text x="66" y="276" font-family="'Instrument Serif',Georgia,serif" font-size="94" font-style="italic" fill="#F7F0E5">matter.</text>
+<text x="1370" y="90" text-anchor="end" font-family="'Caveat',cursive" font-size="34" fill="#1B2032">Stay a little curious.</text>
+<g transform="translate(1310 205)">
+  <circle r="39" fill="#D9F45C"/>
+  <path d="M-14 0H14M4 -10L15 0L4 10" fill="none" stroke="#1B2032" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite"/>
+</g>
+<text x="1370" y="310" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2" fill="#1B2032">EXPLORE / CONNECT / BUILD</text>
 </svg>
