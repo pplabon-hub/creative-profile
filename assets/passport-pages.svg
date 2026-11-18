@@ -1,93 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540" role="img" aria-labelledby="title desc">
-<title id="title">A few pages from the passport.</title>
-<desc id="desc">Seven individually drawn travel stamps for the United States, South Korea, Malaysia, China, Thailand, India and Japan. They are a collection, not a chronological route.</desc>
-<defs>
-  <pattern id="mapDots" width="14" height="14" patternUnits="userSpaceOnUse">
-    <circle cx="2" cy="2" r="1" fill="#536D60" opacity=".2"/>
-  </pattern>
-  <g id="sunMark" fill="none" stroke="currentColor" stroke-width="2">
-    <circle r="10"/><path d="M0-21V-15M0 15V21M-21 0H-15M15 0H21M-15-15L-11-11M11 11L15 15M15-15L11-11M-11 11L-15 15"/>
-  </g>
-  <g id="waveMark" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M-24-6Q-12-17 0-6T24-6M-24 5Q-12-6 0 5T24 5M-24 16Q-12 5 0 16T24 16"/>
-  </g>
-  <g id="compassMark" fill="none" stroke="currentColor" stroke-width="2">
-    <circle r="24"/><path d="M0-19L6 0L0 19L-6 0Z M-19 0H19"/>
-  </g>
-</defs>
+<title id="title">A few pages from the passport.</title><desc id="desc">Seven travel stamps for the United States, South Korea, Malaysia, China, Thailand, India and Japan. Stamps and country typography arrive in a staggered sequence.</desc>
+<defs><pattern id="mapDots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#536D60" opacity=".2"/></pattern><g id="sunMark" fill="none" stroke="currentColor" stroke-width="2"><circle r="10"/><path d="M0-21V-15M0 15V21M-21 0H-15M15 0H21M-15-15L-11-11M11 11L15 15M15-15L11-11M-11 11L-15 15"/></g><g id="waveMark" fill="none" stroke="currentColor" stroke-width="2"><path d="M-24-6Q-12-17 0-6T24-6M-24 5Q-12-6 0 5T24 5M-24 16Q-12 5 0 16T24 16"/></g><g id="compassMark" fill="none" stroke="currentColor" stroke-width="2"><circle r="24"/><path d="M0-19L6 0L0 19L-6 0Z M-19 0H19"/></g></defs>
+<rect width="1440" height="540" rx="8" fill="#E7E0CF"/><rect width="1440" height="540" rx="8" fill="url(#mapDots)"/><path d="M42 39H1398" stroke="#26312C" stroke-opacity=".35"/>
+<text x="62" y="28" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2.2" fill="#536D60">CHAPTER 01 / THE PLACES</text>
+<g opacity="0"><text x="62" y="117" font-family="'DM Serif Display',Georgia,serif" font-size="70" fill="#26312C">A few pages from the passport.</text><animate attributeName="opacity" values="0;1" begin=".12s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="7px;0px" begin=".12s" dur=".75s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 18;0 0" begin=".12s" dur=".75s" fill="freeze"/></g>
+<g opacity="0"><text x="1378" y="113" text-anchor="end" font-family="'Caveat',cursive" font-size="31" fill="#A84F3A">a collection, not a chronology</text><animate attributeName="opacity" values="0;1" begin=".75s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="5px;0px" begin=".75s" dur=".8s" fill="freeze"/></g>
 
-<rect width="1440" height="540" rx="8" fill="#E7E0CF"/>
-<rect width="1440" height="540" rx="8" fill="url(#mapDots)"/>
-<path d="M42 39H1398" stroke="#26312C" stroke-opacity=".35"/>
-<text x="62" y="28" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2.2" fill="#536D60">CHAPTER 01  /  THE PLACES</text>
-<text x="62" y="117" font-family="'DM Serif Display',Georgia,serif" font-size="70" fill="#26312C">A few pages from the passport.</text>
-<text x="1378" y="113" text-anchor="end" font-family="'Caveat',cursive" font-size="31" fill="#A84F3A">a collection, not a chronology</text>
-
-<!-- loose travel-journal stamps, intentionally varied in scale and angle -->
-<g transform="translate(165 300) rotate(-7)" color="#A84F3A">
-  <rect x="-83" y="-72" width="166" height="144" rx="4" fill="#F5EBDD" fill-opacity=".68" stroke="#A84F3A" stroke-width="2.5" stroke-dasharray="3 3"/>
-  <rect x="-73" y="-62" width="146" height="124" rx="2" fill="none" stroke="#A84F3A" stroke-width="1"/>
-  <use href="#sunMark" x="0" y="-16"/>
-  <text x="0" y="38" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="24" letter-spacing="2" fill="#A84F3A">UNITED STATES</text>
-  <text x="0" y="55" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.5" fill="#A84F3A">USA / NOTE 01</text>
-  <animate attributeName="opacity" values=".3;1;1" keyTimes="0;.18;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(370 270) rotate(4)" color="#536D60">
-  <circle r="80" fill="#F5EBDD" fill-opacity=".55" stroke="#536D60" stroke-width="2.5" stroke-dasharray="2 5"/>
-  <circle r="69" fill="none" stroke="#536D60" stroke-width="1.3"/>
-  <use href="#compassMark" x="0" y="-12"/>
-  <text x="0" y="45" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="21" letter-spacing="1.5" fill="#536D60">SOUTH KOREA</text>
-  <text x="0" y="62" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.3" fill="#536D60">KOR / NOTE 02</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.25;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(590 318) rotate(-3)" color="#566C8A">
-  <rect x="-92" y="-58" width="184" height="116" fill="#F5EBDD" fill-opacity=".65" stroke="#566C8A" stroke-width="2.5"/>
-  <path d="M-80-46H80V46H-80Z" fill="none" stroke="#566C8A" stroke-width="1" stroke-dasharray="5 3"/>
-  <use href="#waveMark" x="0" y="-5"/>
-  <text x="0" y="35" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="26" letter-spacing="2" fill="#566C8A">MALAYSIA</text>
-  <text x="0" y="48" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.3" fill="#566C8A">MYS / NOTE 03</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.31;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(830 268) rotate(5)" color="#A84F3A">
-  <circle r="77" fill="#F5EBDD" fill-opacity=".6" stroke="#A84F3A" stroke-width="2.5"/>
-  <circle r="66" fill="none" stroke="#A84F3A" stroke-width="1" stroke-dasharray="1 4"/>
-  <path d="M-24 0H24M0-24V24M-17-17L17 17M17-17L-17 17" stroke="#A84F3A" stroke-width="1.2"/>
-  <circle r="28" fill="none" stroke="#A84F3A" stroke-width="1.5"/>
-  <text x="0" y="49" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="25" letter-spacing="2" fill="#A84F3A">CHINA</text>
-  <text x="0" y="64" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#A84F3A">CHN / NOTE 04</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.38;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(1050 320) rotate(-5)" color="#B38B4A">
-  <rect x="-91" y="-68" width="182" height="136" rx="20" fill="#F5EBDD" fill-opacity=".62" stroke="#B38B4A" stroke-width="2.5"/>
-  <path d="M-75-52H75V52H-75Z" fill="none" stroke="#B38B4A" stroke-width="1.2"/>
-  <path d="M-35-13Q-17-43 0-13T35-13M-35 5Q-17-25 0 5T35 5" fill="none" stroke="#B38B4A" stroke-width="2"/>
-  <text x="0" y="43" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="26" letter-spacing="2" fill="#B38B4A">THAILAND</text>
-  <text x="0" y="57" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#B38B4A">THA / NOTE 05</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.45;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(1224 176) rotate(8)" color="#536D60">
-  <rect x="-79" y="-62" width="158" height="124" fill="#F5EBDD" fill-opacity=".62" stroke="#536D60" stroke-width="2.5" stroke-dasharray="7 3"/>
-  <path d="M-54 17L-29-23L-4 17L21-23L47 17" fill="none" stroke="#536D60" stroke-width="2"/>
-  <circle cx="0" cy="-23" r="7" fill="none" stroke="#536D60" stroke-width="2"/>
-  <text x="0" y="41" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="27" letter-spacing="2" fill="#536D60">INDIA</text>
-  <text x="0" y="54" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#536D60">IND / NOTE 06</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.52;1" dur="6s" fill="freeze"/>
-</g>
-
-<g transform="translate(1370 365) rotate(-8)" color="#566C8A">
-  <circle r="63" fill="#F5EBDD" fill-opacity=".7" stroke="#566C8A" stroke-width="2.5" stroke-dasharray="4 3"/>
-  <circle r="49" fill="none" stroke="#566C8A" stroke-width="1"/>
-  <path d="M-26 15Q0-30 26 15M-25 18H25" fill="none" stroke="#566C8A" stroke-width="2"/>
-  <text x="0" y="42" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="24" letter-spacing="2" fill="#566C8A">JAPAN</text>
-  <animate attributeName="opacity" values=".2;1;1" keyTimes="0;.6;1" dur="6s" fill="freeze"/>
-</g>
-
+<g transform="translate(165 300) rotate(-7)" color="#A84F3A"><g opacity="0"><rect x="-83" y="-72" width="166" height="144" rx="4" fill="#F5EBDD" fill-opacity=".68" stroke="#A84F3A" stroke-width="2.5" stroke-dasharray="3 3"/><rect x="-73" y="-62" width="146" height="124" rx="2" fill="none" stroke="#A84F3A"/><use href="#sunMark" x="0" y="-16"/><text x="0" y="38" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="24" letter-spacing="2" fill="#A84F3A">UNITED STATES</text><text x="0" y="55" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.5" fill="#A84F3A">USA / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin=".35s" dur=".4s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 18;0 0" begin=".35s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin=".65s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(370 270) rotate(4)" color="#536D60"><g opacity="0"><circle r="80" fill="#F5EBDD" fill-opacity=".55" stroke="#536D60" stroke-width="2.5" stroke-dasharray="2 5"/><circle r="69" fill="none" stroke="#536D60"/><use href="#compassMark" x="0" y="-12"/><text x="0" y="45" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="21" letter-spacing="1.5" fill="#536D60">SOUTH KOREA</text><text x="0" y="62" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.3" fill="#536D60">KOR / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin=".72s" dur=".42s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 17;0 0" begin=".72s" dur=".56s" fill="freeze"/><animate attributeName="letter-spacing" values="9px;1.5px" begin="1.02s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(590 318) rotate(-3)" color="#566C8A"><g opacity="0"><rect x="-92" y="-58" width="184" height="116" fill="#F5EBDD" fill-opacity=".65" stroke="#566C8A" stroke-width="2.5"/><path d="M-80-46H80V46H-80Z" fill="none" stroke="#566C8A" stroke-dasharray="5 3"/><use href="#waveMark" x="0" y="-5"/><text x="0" y="35" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="26" letter-spacing="2" fill="#566C8A">MALAYSIA</text><text x="0" y="48" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.3" fill="#566C8A">MYS / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin="1.08s" dur=".4s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 16;0 0" begin="1.08s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin="1.38s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(830 268) rotate(5)" color="#A84F3A"><g opacity="0"><circle r="77" fill="#F5EBDD" fill-opacity=".6" stroke="#A84F3A" stroke-width="2.5"/><circle r="66" fill="none" stroke="#A84F3A" stroke-dasharray="1 4"/><path d="M-24 0H24M0-24V24M-17-17L17 17M17-17L-17 17" stroke="#A84F3A"/><circle r="28" fill="none" stroke="#A84F3A" stroke-width="1.5"/><text x="0" y="49" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="25" letter-spacing="2" fill="#A84F3A">CHINA</text><text x="0" y="64" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#A84F3A">CHN / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin="1.45s" dur=".4s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 18;0 0" begin="1.45s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin="1.75s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(1050 320) rotate(-5)" color="#B38B4A"><g opacity="0"><rect x="-91" y="-68" width="182" height="136" rx="20" fill="#F5EBDD" fill-opacity=".62" stroke="#B38B4A" stroke-width="2.5"/><path d="M-75-52H75V52H-75Z" fill="none" stroke="#B38B4A"/><path d="M-35-13Q-17-43 0-13T35-13M-35 5Q-17-25 0 5T35 5" fill="none" stroke="#B38B4A" stroke-width="2"/><text x="0" y="43" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="26" letter-spacing="2" fill="#B38B4A">THAILAND</text><text x="0" y="57" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#B38B4A">THA / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin="1.82s" dur=".42s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 18;0 0" begin="1.82s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin="2.12s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(1224 176) rotate(8)" color="#536D60"><g opacity="0"><rect x="-79" y="-62" width="158" height="124" fill="#F5EBDD" fill-opacity=".62" stroke="#536D60" stroke-width="2.5" stroke-dasharray="7 3"/><path d="M-54 17L-29-23L-4 17L21-23L47 17" fill="none" stroke="#536D60" stroke-width="2"/><circle cx="0" cy="-23" r="7" fill="none" stroke="#536D60" stroke-width="2"/><text x="0" y="41" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="27" letter-spacing="2" fill="#536D60">INDIA</text><text x="0" y="54" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#536D60">IND / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin="2.18s" dur=".4s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 17;0 0" begin="2.18s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin="2.48s" dur=".55s" fill="freeze"/></g></g>
+<g transform="translate(1370 365) rotate(-8)" color="#566C8A"><g opacity="0"><circle r="63" fill="#F5EBDD" fill-opacity=".7" stroke="#566C8A" stroke-width="2.5" stroke-dasharray="4 3"/><circle r="49" fill="none" stroke="#566C8A"/><path d="M-26 15Q0-30 26 15M-25 18H25" fill="none" stroke="#566C8A" stroke-width="2"/><text x="0" y="42" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="24" letter-spacing="2" fill="#566C8A">JAPAN</text><text x="0" y="56" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="8" letter-spacing="1.2" fill="#566C8A">JPN / FIELD NOTE</text><animate attributeName="opacity" values="0;1" begin="2.55s" dur=".4s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 17;0 0" begin="2.55s" dur=".55s" fill="freeze"/><animate attributeName="letter-spacing" values="10px;2px" begin="2.85s" dur=".55s" fill="freeze"/></g></g>
 <path d="M62 476H1378" stroke="#26312C" stroke-opacity=".35"/>
-<text x="62" y="510" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2" fill="#536D60">SEVEN PLACES / MANY MORE PAGES TO COME</text>
-<text x="1378" y="510" text-anchor="end" font-family="'Caveat',cursive" font-size="27" fill="#A84F3A">no itinerary can hold every story</text>
+<g opacity="0"><text x="62" y="510" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2" fill="#536D60">SEVEN PLACES / MANY MORE PAGES TO COME</text><animate attributeName="opacity" values="0;1" begin="3.1s" dur=".5s" fill="freeze"/></g>
+<g opacity="0"><text x="1378" y="510" text-anchor="end" font-family="'Caveat',cursive" font-size="27" fill="#A84F3A">no itinerary can hold every story</text><animate attributeName="opacity" values="0;1" begin="3.35s" dur=".5s" fill="freeze"/><animate attributeName="letter-spacing" values="6px;0px" begin="3.35s" dur=".6s" fill="freeze"/></g>
 </svg>

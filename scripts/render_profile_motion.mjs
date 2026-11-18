@@ -5,16 +5,17 @@ import { execFileSync } from "node:child_process";
 import { chromium } from "playwright";
 
 const root = process.cwd();
-const frames = 32;
+const frames = 40;
 const fps = 8;
 const assets = [
   { name: "fieldbook-cover", width: 1440, height: 680, images: ["portrait-casual.jpg"] },
   { name: "passport-pages", width: 1440, height: 540, images: [] },
   { name: "table-notes", width: 1440, height: 560, images: [] },
-  { name: "reflections", width: 1440, height: 520, images: ["portrait-suit.jpg"] }
+  { name: "reflections", width: 1440, height: 520, images: ["portrait-suit.jpg"] },
+  { name: "homecoming", width: 1440, height: 560, images: [] }
 ];
 
-const fontCss = `@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap');`;
+const fontCss = "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap');";
 
 function run(command, args) {
   execFileSync(command, args, { stdio: "inherit", cwd: root });
@@ -53,10 +54,24 @@ try {
       await page.setContent(html, { waitUntil: "networkidle", timeout: 45000 });
       await page.evaluate(() => document.fonts.ready);
 
+      // Pause SVG SMIL time and sample the exact same timeline for every frame.
+      await page.evaluate(() => {
+        const rootSvg = document.querySelector("svg");
+        if (!rootSvg) throw new Error("SVG root is missing");
+        rootSvg.pauseAnimations();
+        rootSvg.setCurrentTime(0);
+      });
+
       for (let i = 0; i < frames; i += 1) {
+        await page.evaluate((time) => {
+          const rootSvg = document.querySelector("svg");
+          rootSvg.setCurrentTime(time);
+        }, i / fps);
+        await page.evaluate(() => new Promise(resolve =>
+          requestAnimationFrame(() => requestAnimationFrame(resolve))
+        ));
         const file = path.join(frameDir, "frame-" + String(i).padStart(3, "0") + ".png");
         await page.screenshot({ path: file, omitBackground: true });
-        await page.waitForTimeout(1000 / fps);
       }
 
       const rawGif = path.join(os.tmpdir(), asset.name + "-raw.gif");
@@ -75,16 +90,6 @@ try {
       await page.close();
     }
   }
-
-  const readmePath = path.join(root, "README.md");
-  let readme = fs.readFileSync(readmePath, "utf8");
-  for (const asset of assets) {
-    readme = readme.replaceAll(
-      'src="assets/' + asset.name + '.svg"',
-      'src="assets/' + asset.name + '.gif"'
-    );
-  }
-  fs.writeFileSync(readmePath, readme);
 } finally {
   await browser.close();
 }

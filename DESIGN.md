@@ -1,57 +1,47 @@
 # Postcards & Plates
-## Art direction for the creative-profile travel journal
+## Motion-led art direction for the creative-profile travel journal
 
-### The idea
-This profile is a personal travel fieldbook, not a travel-agency landing page and not a tech portfolio with a map pasted on top. Its narrative has four chapters: **places, the table, reflections, and the curiosity brought back home**.
+### Core idea
+A personal travel fieldbook with a clear narrative: **places → the table → reflection → what comes home**. It should feel like an independent travel magazine with real photographs, inked passport marks, paper edges, annotated notes and typography that behaves like a designed sequence.
 
-The design should feel like an independent travel magazine assembled from a real person's notebook: annotated photographs, imperfect stamp marks, paper edges, ticket fragments, hand-drawn lines, marginal notes and a confident editorial grid.
+This is not a travel-agency page, a portfolio dashboard or an animated template. Every section gets its own visual rhythm and type choreography.
 
-### The narrative sequence
-1. **The cover:** a portrait and the premise: places, plates and perspective.
-2. **The passport pages:** seven country names shown as a loose collection, explicitly not a dated or chronological route.
-3. **The table:** a hand-drawn setting and a short personal note about being a food lover.
-4. **The reflections:** what travel leaves behind, expressed without inventing specific anecdotes.
-5. **Back at the desk:** a quiet return to AI, technology, business and creative projects.
-
-### Palette: ink, paper and travel ephemera
+### Palette: print ink on warm stock
 | Token | Hex | Purpose |
 |---|---|---|
 | Notebook paper | `#F1E7D7` | Main paper surface |
 | Deep ink | `#26312C` | Primary text and print marks |
 | Brick stamp | `#A84F3A` | Editorial emphasis and stamp ink |
 | Field green | `#536D60` | Secondary ink and table chapter |
-| Faded indigo | `#566C8A` | One of the archival stamp inks |
-| Ochre | `#B38B4A` | Paper backing, ticket details and small marks |
+| Faded indigo | `#566C8A` | Archival stamp ink |
+| Ochre | `#B38B4A` | Paper backing and small details |
 | Soft paper | `#F5EBDD` | Photo borders and stamp interiors |
 
-No neon, no gradient backgrounds, no blue-violet AI glow, no candy-colour blocks. Colour should resemble a small set of pigment inks printed on paper, not a preset AI palette.
+Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-everywhere styling. Colour is treated like a small set of pigment inks on physical paper.
 
-### Typography
-- **Display:** DM Serif Display for large editorial statements.
-- **Condensed labels:** Barlow Condensed for stamp titles, chapter numbers and short emphasis.
-- **Body:** DM Sans for natural, readable copy.
-- **Handwritten marginalia:** Caveat, sparingly, as a human annotation rather than a decorative font everywhere.
-- **Metadata:** IBM Plex Mono for file-like labels and small index text.
+### Type system
+- **DM Serif Display:** literary display headlines, used with restraint.
+- **Barlow Condensed:** passport stamps, chapter labels and large all-caps typography.
+- **DM Sans:** clear body copy.
+- **Caveat:** handwritten margin notes, not general UI text.
+- **IBM Plex Mono:** chapter index and small metadata.
 
-Keep the typography mixed but disciplined. Large serif phrases create the mood; body copy stays quiet; condensed stamps and monospaced details add the fieldbook character.
+### Section-by-section typography choreography
+1. **Cover / Places, plates & perspective:** the chapter label tracks in, “Places,” rises into view, italic “plates &” slides from the margin, then “PERSPECTIVE.” lands in condensed capitals. The route line traces first; supporting copy is wiped on after the headline.
+2. **Passport / Seven stamps:** headline expands from loose tracking to tight editorial spacing. Each country stamp enters at a different beat and settles into its own angle. Country labels tighten their tracking as each stamp arrives. This is a collected set, not an invented travel chronology.
+3. **The table / Another map:** the first phrase enters with a soft vertical lift; italic second line moves in from the left. A hand-drawn underline follows. Body copy is revealed with a paper-mask wipe; the Caveat annotation writes on after it. Steam moves slowly and independently.
+4. **Reflections / What I bring back:** serif display line settles vertically, “back.” arrives in handwritten type, then the paragraph is uncovered in ruled lines. The compass turns very slowly as a quiet secondary motion.
+5. **Homecoming / The journey keeps working:** condensed capitals enter from the margin, italic serif line rises, and the notebook entries appear one by one in three different type voices. The page illustration stays still so typography remains the lead actor.
 
-### Composition rules
-- No repeated equal-width cards.
-- No rows of pill badges.
-- No generic icon grids or world-map stock graphic.
-- No synthetic travel photography, invented destinations, dates, restaurants or anecdotes.
-- Use the supplied original portraits only. Crops may change; identity and facial features must not.
-- Country names are set as stamps with different sizes and rotations, not as flags or stereotypes.
-- Use irregular alignment, fine rules, perforation marks, ruled paper, taped photo corners and hand-drawn annotation lines.
-- Every important statement remains in Markdown outside the artwork for mobile accessibility and image fallbacks.
+### Motion principles
+- The motion explains reading order. It is not decoration applied to every object.
+- Each panel has its own entrance pattern, pace and pause.
+- Use small travel-paper imperfections, not generic motion presets.
+- No flashing, rapid zooms, bouncing UI cards or identical fade-ups on all sections.
+- Loops hold on a finished composition long enough to read.
 
-### Motion direction
-- **Cover:** a hand-drawn route line traces in, then the title underline; the photo and stamp settle gently into place.
-- **Passport pages:** stamps arrive one by one with slight differences in timing and rotation. No flashing, no fast zooms.
-- **Table:** steam drifts slowly and a small ink annotation draws on. Keep the plate illustration still.
-- **Reflections:** one quiet compass mark turns slowly while the paper stays calm.
+### Deterministic GIF rendering
+The build waits for web fonts, pauses SVG animation time, then samples each SVG at exact timeline intervals. This prevents the first moments of typography choreography being skipped while external fonts load. GIFs use 8 fps and a short editorial loop, with static SVG sources retained as accessible fallbacks.
 
-Motion should feel like pages being made and annotated, not UI components animating on a dashboard. GIFs are used because GitHub profile READMEs cannot run custom JavaScript or page-level scroll animations.
-
-### GitHub implementation
-Static SVG panels are committed first so the complete design is immediately previewable. GitHub Actions converts them into optimized looping GIFs. Only after all renders finish does the workflow swap README references from SVG to GIF. The live `main` branch is not part of this preview process.
+### GitHub constraints
+GitHub Profile README does not support custom JavaScript, scroll-triggered page animation, WebGL or user-controlled smooth scrolling. The motion is authored in SVG and exported to GIF for reliable inline playback. The `main` branch remains untouched; preview changes are isolated to `design/creative-preview`.

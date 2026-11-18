@@ -9,8 +9,9 @@ on:
       - "assets/passport-pages.svg"
       - "assets/table-notes.svg"
       - "assets/reflections.svg"
+      - "assets/homecoming.svg"
       - "assets/portrait-casual.jpg"
-      - "assets/portrait-hero.jpg"
+      - "assets/portrait-suit.jpg"
       - "scripts/render_profile_motion.mjs"
       - ".github/workflows/render-profile-motion.yml"
   workflow_dispatch:
@@ -19,13 +20,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: travel-journal-motion-v3-${{ github.ref }}
+  group: travel-journal-motion-v4-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Check out the preview branch
         uses: actions/checkout@v4
@@ -47,7 +48,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg gifsicle
 
-      - name: Render travel journal panels
+      - name: Render typography-led journal panels
         run: node scripts/render_profile_motion.mjs
 
       - name: Commit optimized motion assets
@@ -56,12 +57,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif
+          git add README.md assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif
           if git diff --cached --quiet; then
             echo "Motion assets are already current."
             exit 0
           fi
-          git commit -m "Render animated travel fieldbook panels"
+          git commit -m "Render typography-led travel journal animations"
           git fetch origin "$TARGET_BRANCH"
           git rebase "origin/$TARGET_BRANCH"
           git push origin "HEAD:$TARGET_BRANCH"
