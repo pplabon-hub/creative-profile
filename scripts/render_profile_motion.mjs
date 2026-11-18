@@ -8,10 +8,10 @@ const root = process.cwd();
 const frames = 40;
 const fps = 8;
 const assets = [
-  { name: "fieldbook-cover", width: 1440, height: 680, images: ["portrait-casual.jpg"] },
+  { name: "fieldbook-cover", width: 1440, height: 680, images: [] },
   { name: "passport-pages", width: 1440, height: 540, images: [] },
   { name: "table-notes", width: 1440, height: 560, images: [] },
-  { name: "reflections", width: 1440, height: 520, images: ["portrait-suit.jpg"] },
+  { name: "reflections", width: 1440, height: 520, images: [] },
   { name: "homecoming", width: 1440, height: 560, images: [] }
 ];
 

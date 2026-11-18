@@ -20,7 +20,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: travel-journal-motion-v4-${{ github.ref }}
+  group: travel-journal-motion-v5-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:

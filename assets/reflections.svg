@@ -3,11 +3,22 @@
 <defs><pattern id="ruled" width="20" height="32" patternUnits="userSpaceOnUse"><path d="M0 31.5H20" stroke="#8A9B8D" stroke-opacity=".34" stroke-width="1"/></pattern><clipPath id="reflectPhoto"><path d="M135 80L527 96L510 439L118 422Z"/></clipPath><clipPath id="reflectCopy"><rect x="637" y="322" width="0" height="125"><animate attributeName="width" values="0;735" begin="1.7s" dur="1.35s" fill="freeze"/></rect></clipPath></defs>
 <rect width="1440" height="520" rx="8" fill="#F1E7D7"/><path d="M42 38H1398" stroke="#26312C" stroke-opacity=".35"/>
 <g opacity="0"><text x="62" y="27" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2.2" fill="#536D60">CHAPTER 03 / REFLECTIONS</text><animate attributeName="opacity" values="0;1" begin=".1s" dur=".45s" fill="freeze"/></g>
-<path d="M102 69L552 87L528 463L78 444Z" fill="#C39B5A"/><path d="M135 80L527 96L510 439L118 422Z" fill="#FFFCF5" stroke="#26312C" stroke-width="1.5"/>
-<g clip-path="url(#reflectPhoto)"><image href="portrait-suit.jpg" x="115" y="75" width="415" height="370" preserveAspectRatio="xMidYMin slice"/></g>
-<path d="M135 80L527 96L510 439L118 422Z" fill="none" stroke="#26312C" stroke-width="1.5"/><path d="M250 67L393 73L389 104L246 98Z" fill="#D8C9A9" opacity=".9"/>
-<g opacity="0"><text x="155" y="478" font-family="'Caveat',cursive" font-size="31" fill="#A84F3A" transform="rotate(-2 155 478)">a moment between chapters</text><animate attributeName="opacity" values="0;1" begin="2.7s" dur=".5s" fill="freeze"/><animate attributeName="letter-spacing" values="6px;0px" begin="2.7s" dur=".85s" fill="freeze"/></g>
-<g opacity="0"><text x="635" y="106" font-family="'Barlow Condensed',Impact,sans-serif" font-size="18" letter-spacing="3" fill="#A84F3A">THE THINGS THAT STAY</text><animate attributeName="opacity" values="0;1" begin=".25s" dur=".4s" fill="freeze"/><animate attributeName="letter-spacing" values="8px;3px" begin=".25s" dur=".6s" fill="freeze"/></g>
+
+<!-- A printed field-note card instead of an unfilled photograph slot. -->
+<g transform="translate(112 78) rotate(-2)">
+  <rect width="420" height="368" fill="#3D7894"/>
+  <rect x="18" y="18" width="384" height="332" fill="#F8F0E1" stroke="#26312C" stroke-width="1.5"/>
+  <rect x="18" y="18" width="384" height="14" fill="#D6A13C"/>
+  <text x="43" y="76" font-family="'IBM Plex Mono',monospace" font-size="11" letter-spacing="2" fill="#A84F3A">MARGIN NOTES / AFTER THE TRIP</text>
+  <text x="40" y="153" font-family="'DM Serif Display',Georgia,serif" font-size="51" fill="#26312C">Notice</text>
+  <text x="40" y="211" font-family="'DM Serif Display',Georgia,serif" font-size="51" font-style="italic" fill="#536D60">the details.</text>
+  <path d="M42 240C128 225 215 253 360 236" fill="none" stroke="#A84F3A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 280H360M44 304H338M44 328H315" stroke="#9C9B8A" stroke-width="1.2" stroke-dasharray="2 5"/>
+  <circle cx="348" cy="83" r="20" fill="#A84F3A"/>
+  <path d="M338 83H358M348 73V93" stroke="#F8F0E1" stroke-width="2"/>
+</g>
+<text x="155" y="478" font-family="'Caveat',cursive" font-size="31" fill="#A84F3A" transform="rotate(-2 155 478)">a moment between chapters</text>
+<text x="635" y="106" font-family="'Barlow Condensed',Impact,sans-serif" font-size="18" letter-spacing="3" fill="#A84F3A">THE THINGS THAT STAY</text><animate attributeName="opacity" values="0;1" begin=".25s" dur=".4s" fill="freeze"/><animate attributeName="letter-spacing" values="8px;3px" begin=".25s" dur=".6s" fill="freeze"/></g>
 <g opacity="0"><text x="625" y="200" font-family="'DM Serif Display',Georgia,serif" font-size="82" fill="#26312C">What I bring</text><animate attributeName="opacity" values="0;1" begin=".55s" dur=".65s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 25;0 0" begin=".55s" dur=".8s" calcMode="spline" keySplines=".2 .8 .2 1" fill="freeze"/><animate attributeName="letter-spacing" values="6px;0px" begin=".55s" dur=".7s" fill="freeze"/></g>
 <g opacity="0"><text x="625" y="286" font-family="'Caveat',cursive" font-size="89" fill="#536D60">back.</text><animate attributeName="opacity" values="0;1" begin="1.12s" dur=".6s" fill="freeze"/><animateTransform attributeName="transform" type="translate" values="0 28;0 0" begin="1.12s" dur=".8s" fill="freeze"/><animate attributeName="letter-spacing" values="9px;0px" begin="1.12s" dur=".9s" fill="freeze"/></g>
 <rect x="630" y="312" width="726" height="120" fill="url(#ruled)" opacity=".72"/>

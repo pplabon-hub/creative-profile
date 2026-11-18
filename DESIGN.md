@@ -16,6 +16,8 @@ This is not a travel-agency page, a portfolio dashboard or an animated template.
 | Faded indigo | `#566C8A` | Archival stamp ink |
 | Ochre | `#B38B4A` | Paper backing and small details |
 | Soft paper | `#F5EBDD` | Photo borders and stamp interiors |
+| Lapis accent | `#3D7894` | Small stamp and ticket accents |
+| Saffron accent | `#D19A36` | Tiny highlights and printed details |
 
 Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-everywhere styling. Colour is treated like a small set of pigment inks on physical paper.
 
@@ -33,6 +35,11 @@ Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-ev
 4. **Reflections / What I bring back:** serif display line settles vertically, “back.” arrives in handwritten type, then the paragraph is uncovered in ruled lines. The compass turns very slowly as a quiet secondary motion.
 5. **Homecoming / The journey keeps working:** condensed capitals enter from the margin, italic serif line rises, and the notebook entries appear one by one in three different type voices. The page illustration stays still so typography remains the lead actor.
 
+### Photo treatment and identity
+- The formal cream-suit mirror portrait and the outdoor blue-jacket portrait are original user-supplied photos, placed directly in the README as JPGs.
+- Preserve each photograph exactly apart from proportional export compression. No face generation, retouching, face reshaping or synthetic portrait replacement.
+- Do not leave decorative empty image frames inside animated panels; use actual portrait files in Markdown image elements so GitHub renders them reliably.
+
 ### Motion principles
 - The motion explains reading order. It is not decoration applied to every object.
 - Each panel has its own entrance pattern, pace and pause.
@@ -45,3 +52,6 @@ The build waits for web fonts, pauses SVG animation time, then samples each SVG 
 
 ### GitHub constraints
 GitHub Profile README does not support custom JavaScript, scroll-triggered page animation, WebGL or user-controlled smooth scrolling. The motion is authored in SVG and exported to GIF for reliable inline playback. The `main` branch remains untouched; preview changes are isolated to `design/creative-preview`.
+
+### Accent restraint
+The print palette remains dominant. Lapis and saffron appear only as small marks, not as full backgrounds, gradients or glowing UI elements.
