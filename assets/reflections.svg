@@ -15,7 +15,7 @@
 <path d="M102 69L552 87L528 463L78 444Z" fill="#C39B5A"/>
 <path d="M135 80L527 96L510 439L118 422Z" fill="#FFFCF5" stroke="#26312C" stroke-width="1.5"/>
 <g clip-path="url(#reflectPhoto)">
-  <image href="portrait-hero.jpg" x="115" y="75" width="415" height="370" preserveAspectRatio="xMidYMid slice"/>
+  <image href="portrait-suit.jpg" x="115" y="75" width="415" height="370" preserveAspectRatio="xMidYMid slice"/>
 </g>
 <path d="M135 80L527 96L510 439L118 422Z" fill="none" stroke="#26312C" stroke-width="1.5"/>
 <path d="M250 67L393 73L389 104L246 98Z" fill="#D8C9A9" opacity=".9"/>
@@ -30,9 +30,9 @@
 <text x="637" y="376" font-family="'DM Sans',Arial,sans-serif" font-size="19" fill="#39433D">It leaves new questions, different perspectives, and small</text>
 <text x="637" y="409" font-family="'DM Sans',Arial,sans-serif" font-size="19" fill="#39433D">details that keep travelling long after the return.</text>
 <text x="645" y="476" font-family="'Caveat',cursive" font-size="35" fill="#A84F3A">The best part is seeing the familiar differently.</text>
-<g transform="translate(1325 128) rotate(7)">
+<g transform="translate(1325 128)"><g transform="rotate(7)">
   <circle r="39" fill="none" stroke="#A84F3A" stroke-width="2.2" stroke-dasharray="3 4"/>
   <path d="M-20 0H20M0-20V20M-14-14L14 14M14-14L-14 14" stroke="#A84F3A" stroke-width="1.5"/>
   <animateTransform attributeName="transform" type="rotate" from="7 0 0" to="367 0 0" dur="45s" repeatCount="indefinite"/>
-</g>
+</g></g>
 </svg>

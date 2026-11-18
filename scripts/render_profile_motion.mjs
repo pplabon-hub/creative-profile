@@ -11,7 +11,7 @@ const assets = [
   { name: "fieldbook-cover", width: 1440, height: 680, images: ["portrait-casual.jpg"] },
   { name: "passport-pages", width: 1440, height: 540, images: [] },
   { name: "table-notes", width: 1440, height: 560, images: [] },
-  { name: "reflections", width: 1440, height: 520, images: ["portrait-hero.jpg"] }
+  { name: "reflections", width: 1440, height: 520, images: ["portrait-suit.jpg"] }
 ];
 
 const fontCss = `@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap');`;
