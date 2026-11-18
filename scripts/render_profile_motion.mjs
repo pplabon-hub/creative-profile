@@ -12,7 +12,8 @@ const assets = [
   { name: "passport-pages", width: 1440, height: 540, images: [] },
   { name: "table-notes", width: 1440, height: 560, images: [] },
   { name: "reflections", width: 1440, height: 520, images: [] },
-  { name: "homecoming", width: 1440, height: 560, images: [] }
+  { name: "homecoming", width: 1440, height: 560, images: [] },
+  { name: "traveler-spread", width: 1440, height: 1090, images: [] }
 ];
 
 const fontCss = "@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap');";
