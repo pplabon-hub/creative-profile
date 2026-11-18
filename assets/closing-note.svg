@@ -13,7 +13,7 @@
 <text x="72" y="146" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="70">Let’s make something useful.</text>
 <text x="76" y="192" fill="#514A50" font-family="'Manrope', sans-serif" font-size="19">Open to good questions, thoughtful experiments and practical ideas.</text>
 <path d="M76 232H720" stroke="#211D24" stroke-opacity=".2"/>
-<path d="M76 232H76" stroke="#B64F3D" stroke-width="3">
+<path d="M76 232H720" stroke="#B64F3D" stroke-width="3">
   <animate attributeName="d" values="M76 232H76;M76 232H720;M76 232H720" keyTimes="0;.45;1" dur="7s" repeatCount="indefinite"/>
 </path>
 <rect x="960" y="54" width="410" height="188" rx="20" fill="#211D24"/>
