@@ -22,12 +22,12 @@
 <circle cx="790" cy="112" r="4" fill="#B64F3D"/>
 
 <g fill="#211D24" font-family="'Fraunces', Georgia, serif">
-  <text x="78" y="250" font-size="112" letter-spacing="-3" opacity="0">
+  <text x="78" y="250" font-size="112" letter-spacing="-3" opacity="1">
     Curiosity,
     <animate attributeName="opacity" values="0;1;1" keyTimes="0;.15;1" dur="7s" repeatCount="indefinite"/>
     <animateTransform attributeName="transform" type="translate" values="0 24;0 0;0 0" keyTimes="0;.15;1" dur="7s" repeatCount="indefinite"/>
   </text>
-  <text x="78" y="368" font-size="112" letter-spacing="-4" font-style="italic" fill="#B64F3D" opacity="0">
+  <text x="78" y="368" font-size="112" letter-spacing="-4" font-style="italic" fill="#B64F3D" opacity="1">
     made tangible.
     <animate attributeName="opacity" values="0;1;1" keyTimes="0;.28;1" dur="7s" repeatCount="indefinite"/>
     <animateTransform attributeName="transform" type="translate" values="0 30;0 0;0 0" keyTimes="0;.28;1" dur="7s" repeatCount="indefinite"/>
@@ -38,7 +38,7 @@
 <text x="84" y="462" fill="#514A50" font-family="'Manrope', sans-serif" font-size="21">and the systems that make ideas useful.</text>
 
 <path d="M84 510H670" stroke="#211D24" stroke-opacity=".22" stroke-width="1"/>
-<path d="M84 510H84" stroke="#B64F3D" stroke-width="4" stroke-linecap="round">
+<path d="M84 510H670" stroke="#B64F3D" stroke-width="4" stroke-linecap="round">
   <animate attributeName="d" values="M84 510H84;M84 510H670;M84 510H670" keyTimes="0;.42;1" dur="7s" repeatCount="indefinite"/>
 </path>
 <text x="84" y="548" fill="#8C997A" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="1.8">IDEAS  ·  EXPERIMENTS  ·  SYSTEMS</text>
