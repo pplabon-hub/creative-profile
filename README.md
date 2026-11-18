@@ -8,18 +8,7 @@ I’m a traveller and a food lover. I like seeing how a place feels beyond its l
 
 ### The traveller behind the notebook
 
-<table>
-  <tr>
-    <td width="53%" valign="top">
-      <img src="assets/traveler-formal.webp" alt="Original full-length portrait in a cream three-piece suit." width="100%"/>
-      <sub>01 / THE FORMAL FRAME</sub>
-    </td>
-    <td width="47%" valign="top">
-      <img src="assets/traveler-outdoor.webp" alt="Original outdoor travel portrait in a blue jacket." width="100%"/>
-      <sub>02 / OUT IN THE WORLD</sub>
-    </td>
-  </tr>
-</table>
+<img src="assets/traveler-spread.gif" alt="Two original portraits presented in a balanced side-by-side travel editorial spread. No face alteration." width="100%"/>
 
 ### 01 / A few pages from the passport
 
