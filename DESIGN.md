@@ -11,13 +11,13 @@ This is not a travel-agency page, a portfolio dashboard or an animated template.
 |---|---|---|
 | Notebook paper | `#F1E7D7` | Main paper surface |
 | Deep ink | `#26312C` | Primary text and print marks |
-| Brick stamp | `#A84F3A` | Editorial emphasis and stamp ink |
-| Field green | `#536D60` | Secondary ink and table chapter |
-| Faded indigo | `#566C8A` | Archival stamp ink |
-| Ochre | `#B38B4A` | Paper backing and small details |
+| Brick stamp | `#D34E35` | Brighter vermilion editorial emphasis and stamp ink |
+| Field green | `#2F6B50` | Richer, deeper secondary ink and table chapter |
+| Lapis accent | `#267B9A` | Stronger blue-green stamp and photo-spread accent |
+| Ochre | `#C88C19` | Rich saffron paper backing and details |
 | Soft paper | `#F5EBDD` | Photo borders and stamp interiors |
-| Lapis accent | `#3D7894` | Small stamp and ticket accents |
-| Saffron accent | `#D19A36` | Tiny highlights and printed details |
+| Lapis accent | `#267B9A` | Noticeable but restrained blue-green stamp and photo-spread accent |
+| Saffron accent | `#E4AE2D` | Warm marigold highlights and printed details |
 
 Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-everywhere styling. Colour is treated like a small set of pigment inks on physical paper.
 
@@ -36,9 +36,9 @@ Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-ev
 5. **Homecoming / The journey keeps working:** condensed capitals enter from the margin, italic serif line rises, and the notebook entries appear one by one in three different type voices. The page illustration stays still so typography remains the lead actor.
 
 ### Photo treatment and identity
-- The formal cream-suit mirror portrait and the outdoor blue-jacket portrait are original user-supplied photos, placed directly in the README as WebP images.
+- The formal cream-suit mirror portrait and the outdoor blue-jacket portrait are original user-supplied photos, embedded in one balanced photo-spread SVG and rendered as part of a dedicated GIF.
 - Preserve each photograph exactly apart from proportional export compression. No face generation, retouching, face reshaping or synthetic portrait replacement.
-- Do not leave decorative empty image frames inside animated panels; use actual portrait WebP files in Markdown image elements so GitHub renders them reliably.
+- Do not leave separate Markdown table cells with unequal intrinsic image heights. The dedicated photo spread embeds both original WebP files and crops them to equal-height frames without geometric distortion or face alteration.
 
 ### Motion principles
 - The motion explains reading order. It is not decoration applied to every object.
@@ -54,4 +54,4 @@ The build waits for web fonts, pauses SVG animation time, then samples each SVG 
 GitHub Profile README does not support custom JavaScript, scroll-triggered page animation, WebGL or user-controlled smooth scrolling. The motion is authored in SVG and exported to GIF for reliable inline playback. The `main` branch remains untouched; preview changes are isolated to `design/creative-preview`.
 
 ### Accent restraint
-The print palette remains dominant. Lapis and saffron appear only as small marks, not as full backgrounds, gradients or glowing UI elements.
+The print palette remains dominant, but the pigments are more saturated: vermilion, blue-green and marigold. Keep them in clearly placed graphic bands, stamps and photo framing, not in gradients or glowing UI elements.
