@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+<title id="title">The things that hold my attention</title>
+<desc id="desc">An editorial spread showing applied AI, digital products and business systems, with a slow moving registration line.</desc>
+<rect width="1440" height="420" rx="12" fill="#E8E1D6"/>
+<path d="M52 46H1388" stroke="#211D24" stroke-opacity=".2"/>
+<text x="64" y="122" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="58">The things that hold my attention.</text>
+<path d="M64 148H1376" stroke="#211D24" stroke-opacity=".18"/>
+<path d="M64 148H64" stroke="#B64F3D" stroke-width="3">
+  <animate attributeName="d" values="M64 148H64;M64 148H1376;M64 148H1376" keyTimes="0;.34;1" dur="8s" repeatCount="indefinite"/>
+</path>
+
+<g>
+  <text x="66" y="214" fill="#B64F3D" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="2">A / APPLIED AI</text>
+  <text x="66" y="276" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="43">Useful intelligence.</text>
+  <text x="66" y="318" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">Assistants, automation and tools</text>
+  <text x="66" y="344" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">that help real work move forward.</text>
+  <path d="M66 374H394" stroke="#A97E61" stroke-width="1"/>
+  <circle cx="394" cy="374" r="4" fill="#B64F3D"/>
+</g>
+
+<path d="M476 194V374" stroke="#211D24" stroke-opacity=".2"/>
+<g>
+  <text x="520" y="214" fill="#8C997A" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="2">B / DIGITAL PRODUCTS</text>
+  <text x="520" y="276" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="43">Thoughtful systems.</text>
+  <text x="520" y="318" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">Interfaces, workflows and product</text>
+  <text x="520" y="344" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">experiments shaped around people.</text>
+  <path d="M520 374H862" stroke="#A97E61" stroke-width="1"/>
+  <circle cx="862" cy="374" r="4" fill="#8C997A"/>
+</g>
+
+<path d="M944 194V374" stroke="#211D24" stroke-opacity=".2"/>
+<g>
+  <text x="990" y="214" fill="#A97E61" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="2">C / BUSINESS</text>
+  <text x="990" y="276" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="43">Ideas into practice.</text>
+  <text x="990" y="318" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">Markets, operations and the work</text>
+  <text x="990" y="344" fill="#514A50" font-family="'Manrope', sans-serif" font-size="17">of turning plans into useful things.</text>
+  <path d="M990 374H1356" stroke="#A97E61" stroke-width="1"/>
+  <circle cx="1356" cy="374" r="4" fill="#A97E61"/>
+</g>
+
+<path d="M-80 398C180 358 330 426 550 388S1010 365 1520 396" fill="none" stroke="#B64F3D" stroke-opacity=".42" stroke-width="1.2" stroke-dasharray="2 12">
+  <animate attributeName="stroke-dashoffset" values="0;-140" dur="16s" repeatCount="indefinite"/>
+</path>
+</svg>

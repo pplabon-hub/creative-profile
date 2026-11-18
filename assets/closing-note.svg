@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300" role="img" aria-labelledby="title desc">
+<title id="title">Let's make something useful</title>
+<desc id="desc">A warm editorial closing card with smoked glass accents and an invitation to explore the profile's repositories.</desc>
+<defs>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#AAA0AE" stop-opacity=".34"/>
+    <stop offset="1" stop-color="#8C997A" stop-opacity=".12"/>
+  </linearGradient>
+  <filter id="blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1440" height="300" rx="12" fill="#E8E1D6"/>
+<path d="M58 56H1382" stroke="#211D24" stroke-opacity=".2"/>
+<text x="72" y="146" fill="#211D24" font-family="'Fraunces', Georgia, serif" font-size="70">Let’s make something useful.</text>
+<text x="76" y="192" fill="#514A50" font-family="'Manrope', sans-serif" font-size="19">Open to good questions, thoughtful experiments and practical ideas.</text>
+<path d="M76 232H720" stroke="#211D24" stroke-opacity=".2"/>
+<path d="M76 232H76" stroke="#B64F3D" stroke-width="3">
+  <animate attributeName="d" values="M76 232H76;M76 232H720;M76 232H720" keyTimes="0;.45;1" dur="7s" repeatCount="indefinite"/>
+</path>
+<rect x="960" y="54" width="410" height="188" rx="20" fill="#211D24"/>
+<ellipse cx="1200" cy="126" rx="172" ry="110" fill="#B64F3D" opacity=".22" filter="url(#blur)">
+  <animate attributeName="cx" values="1168;1228;1168" dur="11s" repeatCount="indefinite"/>
+</ellipse>
+<rect x="980" y="74" width="370" height="148" rx="14" fill="url(#glass)" stroke="#F0EADF" stroke-opacity=".56"/>
+<text x="1010" y="122" fill="#F0EADF" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2">KEEP THE CONVERSATION OPEN</text>
+<text x="1010" y="170" fill="#F0EADF" font-family="'Fraunces', Georgia, serif" font-size="34">Explore the work <tspan fill="#B64F3D">↗</tspan></text>
+<text x="72" y="274" fill="#A97E61" font-family="'IBM Plex Mono', monospace" font-size="11" letter-spacing="2">PPLABON-HUB  /  FIELD NOTES</text>
+</svg>

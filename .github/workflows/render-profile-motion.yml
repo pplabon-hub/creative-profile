@@ -1,0 +1,64 @@
+name: Render profile motion
+
+on:
+  push:
+    branches:
+      - "design/creative-preview"
+    paths:
+      - "assets/hero-index.svg"
+      - "assets/curiosity-index.svg"
+      - "assets/closing-note.svg"
+      - "scripts/render_profile_motion.mjs"
+      - ".github/workflows/render-profile-motion.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: creative-profile-motion
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out the preview branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Install rendering tools
+        run: |
+          npm init -y
+          npm install --no-save --no-audit --no-fund playwright@1.65.0
+          npx playwright install --with-deps chromium
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg gifsicle
+
+      - name: Render animated profile panels
+        run: node scripts/render_profile_motion.mjs
+
+      - name: Commit optimized motion assets
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/hero-index.gif assets/curiosity-index.gif assets/closing-note.gif
+          if git diff --cached --quiet; then
+            echo "Motion assets are already current."
+            exit 0
+          fi
+          git commit -m "Render animated profile artwork"
+          git fetch origin "$TARGET_BRANCH"
+          git rebase "origin/$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"

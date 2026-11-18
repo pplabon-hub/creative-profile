@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 620" role="img" aria-labelledby="title desc">
+<title id="title">Madder Index. Curiosity, made tangible.</title>
+<desc id="desc">A warm paper editorial cover with carbon-violet typography, madder-red marks and a smoked-lilac glass portrait frame waiting for the user's photograph.</desc>
+<defs>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#E7DDE5" stop-opacity=".48"/>
+    <stop offset=".55" stop-color="#AAA0AE" stop-opacity=".19"/>
+    <stop offset="1" stop-color="#8C997A" stop-opacity=".12"/>
+  </linearGradient>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <clipPath id="portraitClip"><rect x="914" y="104" width="424" height="414" rx="18"/></clipPath>
+</defs>
+
+<rect width="1440" height="620" rx="12" fill="#F0EADF"/>
+<rect x="20" y="20" width="1400" height="580" rx="8" fill="none" stroke="#211D24" stroke-opacity=".18"/>
+<path d="M58 70V48H80 M1360 48H1382V70 M58 550V572H80 M1360 572H1382V550" fill="none" stroke="#A97E61" stroke-width="1.5"/>
+
+<text x="82" y="88" fill="#211D24" font-family="'IBM Plex Mono', monospace" font-size="14" letter-spacing="2">PPLABON-HUB  /  PERSONAL INDEX</text>
+<path d="M82 112H780" stroke="#211D24" stroke-opacity=".18"/>
+<circle cx="790" cy="112" r="4" fill="#B64F3D"/>
+
+<g fill="#211D24" font-family="'Fraunces', Georgia, serif">
+  <text x="78" y="250" font-size="112" letter-spacing="-3" opacity="0">
+    Curiosity,
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;.15;1" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 24;0 0;0 0" keyTimes="0;.15;1" dur="7s" repeatCount="indefinite"/>
+  </text>
+  <text x="78" y="368" font-size="112" letter-spacing="-4" font-style="italic" fill="#B64F3D" opacity="0">
+    made tangible.
+    <animate attributeName="opacity" values="0;1;1" keyTimes="0;.28;1" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 30;0 0;0 0" keyTimes="0;.28;1" dur="7s" repeatCount="indefinite"/>
+  </text>
+</g>
+
+<text x="84" y="430" fill="#514A50" font-family="'Manrope', sans-serif" font-size="21">Exploring AI, technology, business</text>
+<text x="84" y="462" fill="#514A50" font-family="'Manrope', sans-serif" font-size="21">and the systems that make ideas useful.</text>
+
+<path d="M84 510H670" stroke="#211D24" stroke-opacity=".22" stroke-width="1"/>
+<path d="M84 510H84" stroke="#B64F3D" stroke-width="4" stroke-linecap="round">
+  <animate attributeName="d" values="M84 510H84;M84 510H670;M84 510H670" keyTimes="0;.42;1" dur="7s" repeatCount="indefinite"/>
+</path>
+<text x="84" y="548" fill="#8C997A" font-family="'IBM Plex Mono', monospace" font-size="13" letter-spacing="1.8">IDEAS  ·  EXPERIMENTS  ·  SYSTEMS</text>
+
+<!-- Portrait plate: intentionally empty until the user supplies a real photograph. -->
+<rect x="890" y="82" width="472" height="458" rx="24" fill="#211D24"/>
+<ellipse cx="1135" cy="284" rx="210" ry="190" fill="#B64F3D" opacity=".28" filter="url(#soft)">
+  <animate attributeName="cx" values="1112;1158;1112" dur="12s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="1080" cy="350" rx="170" ry="150" fill="#8C997A" opacity=".22" filter="url(#soft)"/>
+<rect x="914" y="104" width="424" height="414" rx="18" fill="url(#glass)" stroke="#F0EADF" stroke-opacity=".7" stroke-width="1.4"/>
+<rect x="926" y="116" width="400" height="390" rx="12" fill="none" stroke="#F0EADF" stroke-opacity=".22"/>
+<g clip-path="url(#portraitClip)" fill="none" stroke="#F0EADF" stroke-opacity=".22">
+  <path d="M900 442C1002 332 1106 542 1360 304" stroke-width="1.2"/>
+  <path d="M900 462C1020 350 1110 562 1360 324" stroke-width="1"/>
+  <path d="M900 482C1034 368 1128 578 1360 344" stroke-width="1"/>
+  <path d="M900 502C1050 390 1144 594 1360 364" stroke-width="1"/>
+</g>
+<path d="M946 146V128H964 M1288 128H1306V146 M946 476V494H964 M1288 494H1306V476" fill="none" stroke="#F0EADF" stroke-width="1.6"/>
+<text x="1126" y="288" text-anchor="middle" fill="#F0EADF" font-family="'Fraunces', Georgia, serif" font-size="34" font-style="italic">Your portrait</text>
+<text x="1126" y="326" text-anchor="middle" fill="#F0EADF" opacity=".7" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2">PHOTO PLATE  /  RESERVED</text>
+<text x="1126" y="476" text-anchor="middle" fill="#F0EADF" opacity=".68" font-family="'Manrope', sans-serif" font-size="13">Original photo will be placed here</text>
+<text x="1328" y="568" text-anchor="end" fill="#A97E61" font-family="'IBM Plex Mono', monospace" font-size="12" letter-spacing="2">A LIVING FIELD JOURNAL</text>
+</svg>
