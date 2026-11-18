@@ -58,12 +58,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif assets/traveler-spread.gif
+          mkdir -p /tmp/rendered-motion
+          cp assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif assets/traveler-spread.gif /tmp/rendered-motion/
+          git fetch origin "$TARGET_BRANCH"
+          git reset --hard "origin/$TARGET_BRANCH"
+          cp /tmp/rendered-motion/*.gif assets/
+          git add assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif assets/traveler-spread.gif
           if git diff --cached --quiet; then
             echo "Motion assets are already current."
             exit 0
           fi
           git commit -m "Render typography-led travel journal animations"
-          git fetch origin "$TARGET_BRANCH"
-          git rebase "origin/$TARGET_BRANCH"
           git push origin "HEAD:$TARGET_BRANCH"
