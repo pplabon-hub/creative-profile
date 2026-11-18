@@ -10,6 +10,7 @@ on:
       - "assets/table-notes.svg"
       - "assets/reflections.svg"
       - "assets/homecoming.svg"
+      - "assets/traveler-spread.svg"
       - "assets/portrait-casual.jpg"
       - "assets/portrait-suit.jpg"
       - "scripts/render_profile_motion.mjs"
@@ -20,7 +21,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: travel-journal-motion-v5-${{ github.ref }}
+  group: travel-journal-motion-v6-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
