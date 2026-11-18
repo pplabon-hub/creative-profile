@@ -1,29 +1,37 @@
 <div align="center">
 
-<img src="assets/hero-index.gif" alt="Vibrant profile cover with kinetic typography, colour shapes and an original portrait." width="100%"/>
+<img src="assets/fieldbook-cover.svg" alt="Places, plates and perspective: a personal travel fieldbook." width="100%"/>
 
 </div>
 
-I’m a curious builder exploring the space between **AI, technology, business and creative design**. I enjoy turning ideas into practical systems, useful experiences and things people can actually use.
+I’m a traveller and a food lover. I like seeing how a place feels beyond its landmarks: the streets, the everyday details, the food, and the different ways people live.
 
-<img src="assets/curiosity-index.gif" alt="Four colour panels showing applied AI, digital products, business and creative technology." width="100%"/>
+### 01 / The places in my notebook
 
-### How I approach the work
+<img src="assets/passport-pages.svg" alt="Travel stamp collection from the United States, South Korea, Malaysia, China, Thailand, India and Japan." width="100%"/>
 
-Start with the real problem. Ask better questions. Connect the dots. Make the result useful, then give it character.
+I’ve travelled to **the United States, South Korea, Malaysia, China, Thailand, India and Japan**. These pages are a collection, not a timeline. Each place adds another point of view.
 
-<img src="assets/workbench.gif" alt="A colourful workbench featuring AI experiments, digital systems, creative technology and a portrait." width="100%"/>
+### 02 / The table is part of the journey
 
-### A little more about me
+<img src="assets/table-notes.svg" alt="A hand-drawn table setting and food-lover's field note." width="100%"/>
 
-I’m interested in thoughtful tools, ambitious experiments and the human side of technology. I like visual storytelling, expressive typography and motion when they make an experience clearer or more memorable.
+Food is never just a stop between destinations. I’m curious about local flavours and the stories, rituals and people gathered around a table. A good meal can become part of how a place stays with you.
 
-<img src="assets/closing-note.gif" alt="Make ideas matter." width="100%"/>
+### 03 / What I bring back
+
+<img src="assets/reflections.svg" alt="Personal reflection page with portrait and handwritten travel notes." width="100%"/>
+
+The map records where I went. The margins hold what I noticed. Travel keeps widening my perspective and reminding me how much there is left to learn.
+
+### 04 / Back at the desk
+
+That same curiosity follows me home. I explore **AI, technology, business and creative ideas**, looking for useful ways to turn questions into things that work.
+
+[Browse my projects and experiments](https://github.com/pplabon-hub?tab=repositories) · [See my GitHub activity](https://github.com/pplabon-hub?tab=overview)
 
 <div align="center">
 
-[Explore my repositories](https://github.com/pplabon-hub?tab=repositories) · [View my GitHub activity](https://github.com/pplabon-hub?tab=overview)
-
-<sub>Curious by nature. Practical by design.</sub>
+<sub>KEEP THE PASSPORT. KEEP THE APPETITE. KEEP LOOKING CLOSER.</sub>
 
 </div>

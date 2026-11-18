@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 680" role="img" aria-labelledby="title desc">
+<title id="title">Places, plates and perspective. A personal travel fieldbook.</title>
+<desc id="desc">An editorial travel-journal cover with a candid personal portrait, hand-drawn flight path, paper textures and restrained ink colours.</desc>
+<defs>
+  <clipPath id="coverPhoto"><path d="M905 91L1324 112L1304 570L884 548Z"/></clipPath>
+  <pattern id="paperLines" width="28" height="28" patternUnits="userSpaceOnUse">
+    <path d="M0 27.5H28" stroke="#B9AD98" stroke-opacity=".12" stroke-width=".7"/>
+  </pattern>
+  <pattern id="tinyDots" width="9" height="9" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r=".7" fill="#333B35" opacity=".18"/>
+  </pattern>
+</defs>
+
+<rect width="1440" height="680" rx="8" fill="#F1E7D7"/>
+<rect width="1440" height="680" rx="8" fill="url(#paperLines)"/>
+<rect x="24" y="24" width="1392" height="632" fill="none" stroke="#536D60" stroke-opacity=".42"/>
+<path d="M58 55H1382" stroke="#26312C" stroke-opacity=".45"/>
+<text x="62" y="46" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2.3" fill="#26312C">THE PERSONAL FIELD BOOK</text>
+<text x="1378" y="46" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2" fill="#A84F3A">VOL. 01  /  PLACES &amp; PLATES</text>
+
+<!-- route scribble, deliberately not a geographic itinerary -->
+<path d="M93 112C205 62 270 165 386 124S553 93 627 151S740 175 823 130" fill="none" stroke="#536D60" stroke-width="2.1" stroke-dasharray="3 9" stroke-linecap="round">
+  <animate attributeName="stroke-dashoffset" values="0;-96" dur="18s" repeatCount="indefinite"/>
+</path>
+<circle cx="93" cy="112" r="5" fill="#A84F3A"/>
+<circle cx="823" cy="130" r="5" fill="#A84F3A"/>
+<path d="M807 119L824 130L806 138" fill="none" stroke="#A84F3A" stroke-width="2"/>
+
+<text x="78" y="193" font-family="'Barlow Condensed',Impact,sans-serif" font-size="19" letter-spacing="3" fill="#536D60">A TRAVEL JOURNAL, NOT A CHECKLIST</text>
+<text x="72" y="315" font-family="'DM Serif Display',Georgia,serif" font-size="112" letter-spacing="-3" fill="#26312C">Places,</text>
+<text x="72" y="416" font-family="'DM Serif Display',Georgia,serif" font-size="112" font-style="italic" letter-spacing="-4" fill="#A84F3A">plates &amp;</text>
+<text x="72" y="518" font-family="'DM Serif Display',Georgia,serif" font-size="112" letter-spacing="-4" fill="#26312C">perspective.</text>
+
+<path d="M82 548C182 569 288 555 393 570" fill="none" stroke="#A84F3A" stroke-width="4" stroke-linecap="round">
+  <animate attributeName="stroke-dasharray" values="0 360;360 0" dur="2.8s" fill="freeze"/>
+</path>
+<text x="84" y="601" font-family="'DM Sans',Arial,sans-serif" font-size="20" fill="#39433D">I travel to see a little further,</text>
+<text x="84" y="630" font-family="'DM Sans',Arial,sans-serif" font-size="20" fill="#39433D">taste something new, and bring a story home.</text>
+
+<!-- photograph with offset stock, tape and handwritten margin -->
+<path d="M890 90L1337 112L1313 588L867 566Z" fill="#C39B5A"/>
+<path d="M905 91L1324 112L1304 570L884 548Z" fill="#FFFAF0" stroke="#26312C" stroke-width="1.4"/>
+<g clip-path="url(#coverPhoto)">
+  <image href="portrait-casual.jpg" x="890" y="95" width="430" height="465" preserveAspectRatio="xMidYMid slice"/>
+</g>
+<path d="M905 91L1324 112L1304 570L884 548Z" fill="none" stroke="#26312C" stroke-width="2"/>
+<path d="M1004 81L1157 89L1152 119L999 111Z" fill="#D8C9A9" opacity=".9"/>
+<g transform="translate(1249 158) rotate(8)">
+  <circle r="58" fill="#F1E7D7" stroke="#A84F3A" stroke-width="2"/>
+  <circle r="49" fill="none" stroke="#A84F3A" stroke-width="1" stroke-dasharray="2 5"/>
+  <text y="-9" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="13" letter-spacing="2" fill="#A84F3A">GO WHERE</text>
+  <text y="10" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="18" letter-spacing="1.4" fill="#A84F3A">CURIOSITY</text>
+  <text y="28" text-anchor="middle" font-family="'Barlow Condensed',Impact,sans-serif" font-size="13" letter-spacing="2" fill="#A84F3A">LEADS</text>
+  <animateTransform attributeName="transform" type="rotate" values="8 0 0;10 0 0;8 0 0" dur="9s" repeatCount="indefinite"/>
+</g>
+<text x="900" y="614" font-family="'Caveat',cursive" font-size="30" fill="#536D60" transform="rotate(-3 900 614)">leave room for one more bite</text>
+<text x="1376" y="632" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="11" letter-spacing="2" fill="#536D60">OPEN THE NOTEBOOK  →</text>
+</svg>

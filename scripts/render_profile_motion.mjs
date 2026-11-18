@@ -5,16 +5,16 @@ import { execFileSync } from "node:child_process";
 import { chromium } from "playwright";
 
 const root = process.cwd();
-const frames = 40;
+const frames = 32;
 const fps = 8;
 const assets = [
-  { name: "hero-index", width: 1440, height: 620, images: ["portrait-hero.jpg"] },
-  { name: "curiosity-index", width: 1440, height: 470, images: [] },
-  { name: "workbench", width: 1440, height: 500, images: ["portrait-suit.jpg"] },
-  { name: "closing-note", width: 1440, height: 340, images: [] }
+  { name: "fieldbook-cover", width: 1440, height: 680, images: ["portrait-casual.jpg"] },
+  { name: "passport-pages", width: 1440, height: 540, images: [] },
+  { name: "table-notes", width: 1440, height: 560, images: [] },
+  { name: "reflections", width: 1440, height: 520, images: ["portrait-hero.jpg"] }
 ];
 
-const fontCss = `@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap');`;
+const fontCss = `@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap');`;
 
 function run(command, args) {
   execFileSync(command, args, { stdio: "inherit", cwd: root });
@@ -32,10 +32,9 @@ try {
     for (const imageName of asset.images) {
       const imagePath = path.join(root, "assets", imageName);
       const imageBase64 = fs.readFileSync(imagePath).toString("base64");
-      const mime = imageName.toLowerCase().endsWith(".png") ? "image/png" : "image/jpeg";
       svg = svg.replaceAll(
         'href="' + imageName + '"',
-        'href="data:' + mime + ';base64,' + imageBase64 + '"'
+        'href="data:image/jpeg;base64,' + imageBase64 + '"'
       );
     }
 
@@ -65,10 +64,10 @@ try {
         "-y", "-framerate", String(fps),
         "-i", path.join(frameDir, "frame-%03d.png"),
         "-filter_complex",
-        "[0:v]fps=" + fps + ",split[s0][s1];[s0]palettegen=max_colors=128:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer",
+        "[0:v]fps=" + fps + ",split[s0][s1];[s0]palettegen=max_colors=96:stats_mode=diff[p];[s1][p]paletteuse=dither=bayer",
         "-loop", "0", rawGif
       ]);
-      run("gifsicle", ["--optimize=3", "--lossy=20", rawGif, "-o", outputPath]);
+      run("gifsicle", ["--optimize=3", "--lossy=25", rawGif, "-o", outputPath]);
       fs.rmSync(frameDir, { recursive: true, force: true });
       fs.rmSync(rawGif, { force: true });
       console.log("Rendered " + outputPath);
@@ -77,7 +76,6 @@ try {
     }
   }
 
-  // Switch README artwork to GIF only after all four renders completed.
   const readmePath = path.join(root, "README.md");
   let readme = fs.readFileSync(readmePath, "utf8");
   for (const asset of assets) {
