@@ -36,9 +36,9 @@ Avoid neon, gradients, electric blue-violet glow, candy blocks and one-colour-ev
 5. **Homecoming / The journey keeps working:** condensed capitals enter from the margin, italic serif line rises, and the notebook entries appear one by one in three different type voices. The page illustration stays still so typography remains the lead actor.
 
 ### Photo treatment and identity
-- The formal cream-suit mirror portrait and the outdoor blue-jacket portrait are original user-supplied photos, placed directly in the README as JPGs.
+- The formal cream-suit mirror portrait and the outdoor blue-jacket portrait are original user-supplied photos, placed directly in the README as WebP images.
 - Preserve each photograph exactly apart from proportional export compression. No face generation, retouching, face reshaping or synthetic portrait replacement.
-- Do not leave decorative empty image frames inside animated panels; use actual portrait files in Markdown image elements so GitHub renders them reliably.
+- Do not leave decorative empty image frames inside animated panels; use actual portrait WebP files in Markdown image elements so GitHub renders them reliably.
 
 ### Motion principles
 - The motion explains reading order. It is not decoration applied to every object.
