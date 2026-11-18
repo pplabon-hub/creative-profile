@@ -8,7 +8,7 @@ I’m a traveller and a food lover. I like seeing how a place feels beyond its l
 
 ### The traveller behind the notebook
 
-<img src="assets/traveler-spread.gif" alt="Two original portraits presented in a balanced side-by-side travel editorial spread. No face alteration." width="100%"/>
+<img src="assets/traveler-spread.svg" alt="Two original portraits presented in a balanced side-by-side travel editorial spread. No face alteration." width="100%"/>
 
 ### 01 / A few pages from the passport
 
