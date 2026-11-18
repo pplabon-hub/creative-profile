@@ -26,7 +26,17 @@ try {
     const sourcePath = path.join(root, "assets", asset.name + ".svg");
     const outputPath = path.join(root, "assets", asset.name + ".gif");
     const frameDir = fs.mkdtempSync(path.join(os.tmpdir(), asset.name + "-"));
-    const svg = fs.readFileSync(sourcePath, "utf8");
+    let svg = fs.readFileSync(sourcePath, "utf8");
+
+    // Inline the user's original portrait so the SVG renders consistently in Playwright.
+    if (asset.name === "hero-index") {
+      const portraitPath = path.join(root, "assets", "portrait-hero.jpg");
+      const portraitBase64 = fs.readFileSync(portraitPath).toString("base64");
+      svg = svg.replace(
+        'href="portrait-hero.jpg"',
+        'href="data:image/jpeg;base64,' + portraitBase64 + '"'
+      );
+    }
 
     const page = await browser.newPage({
       viewport: { width: asset.width, height: asset.height },
