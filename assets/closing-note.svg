@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 340" role="img" aria-labelledby="title desc">
+<title id="title">Make ideas matter. Closing note.</title>
+<desc id="desc">A bold, bright closing card with shifting type, warm coral and teal accents, and an invitation to explore and collaborate.</desc>
+<rect width="1440" height="340" rx="16" fill="#FF704F"/>
+<circle cx="1325" cy="30" r="155" fill="#D9F45C"/>
+<circle cx="116" cy="302" r="115" fill="#45CDBD"/>
+<circle cx="1250" cy="274" r="84" fill="#5E5AE8"/>
+<text x="64" y="60" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="2.5" fill="#1B2032">THE NEXT CHAPTER IS ALWAYS OPEN</text>
+<text x="64" y="190" font-family="'Bricolage Grotesque',sans-serif" font-size="116" font-weight="800" letter-spacing="-4" fill="#1B2032">
+  Make ideas
+  <animateTransform attributeName="transform" type="translate" values="0 20;0 0;0 0" keyTimes="0;.2;1" dur="6s" repeatCount="indefinite"/>
+</text>
+<text x="66" y="276" font-family="'Instrument Serif',Georgia,serif" font-size="94" font-style="italic" fill="#F7F0E5">matter.</text>
+<text x="1370" y="90" text-anchor="end" font-family="'Caveat',cursive" font-size="34" fill="#1B2032">Stay a little curious.</text>
+<g transform="translate(1310 205)">
+  <circle r="39" fill="#D9F45C"/>
+  <path d="M-14 0H14M4 -10L15 0L4 10" fill="none" stroke="#1B2032" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="14s" repeatCount="indefinite"/>
+</g>
+<text x="1370" y="310" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="2" fill="#1B2032">EXPLORE / CONNECT / BUILD</text>
+</svg>

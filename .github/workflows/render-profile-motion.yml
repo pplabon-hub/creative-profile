@@ -1,0 +1,72 @@
+name: Render travel journal motion
+
+on:
+  push:
+    branches:
+      - "design/creative-preview"
+    paths:
+      - "assets/fieldbook-cover.svg"
+      - "assets/passport-pages.svg"
+      - "assets/table-notes.svg"
+      - "assets/reflections.svg"
+      - "assets/homecoming.svg"
+      - "assets/traveler-spread.svg"
+      - "assets/portrait-casual.jpg"
+      - "assets/portrait-suit.jpg"
+      - "scripts/render_profile_motion.mjs"
+      - ".github/workflows/render-profile-motion.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: travel-journal-motion-v6-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out the preview branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Install rendering tools
+        run: |
+          npm init -y
+          npm install --no-save --no-audit --no-fund playwright@1.65.0
+          npx playwright install chromium
+          npx playwright install-deps chromium
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg gifsicle
+
+      - name: Render typography-led journal panels
+        run: node scripts/render_profile_motion.mjs
+
+      - name: Commit optimized motion assets
+        env:
+          TARGET_BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/rendered-motion
+          cp assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif assets/traveler-spread.gif /tmp/rendered-motion/
+          git fetch origin "$TARGET_BRANCH"
+          git reset --hard "origin/$TARGET_BRANCH"
+          cp /tmp/rendered-motion/*.gif assets/
+          git add assets/fieldbook-cover.gif assets/passport-pages.gif assets/table-notes.gif assets/reflections.gif assets/homecoming.gif assets/traveler-spread.gif
+          if git diff --cached --quiet; then
+            echo "Motion assets are already current."
+            exit 0
+          fi
+          git commit -m "Render typography-led travel journal animations"
+          git push origin "HEAD:$TARGET_BRANCH"

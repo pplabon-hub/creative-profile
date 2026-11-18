@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 470" role="img" aria-labelledby="title desc">
+<title id="title">A mind in motion. The curiosity mix.</title>
+<desc id="desc">Four vivid colour blocks describe applied AI, thoughtful products, business experiments and creative technology with expressive mixed typography and gentle motion.</desc>
+<rect width="1440" height="470" rx="14" fill="#F7F0E5"/>
+<text x="64" y="66" font-family="'IBM Plex Mono',monospace" font-size="13" letter-spacing="2.5" fill="#4949E8">THE CURIOSITY MIX / 04 FIELDS</text>
+<text x="64" y="148" font-family="'Instrument Serif',Georgia,serif" font-size="76" font-style="italic" fill="#1B2032">A mind in motion.</text>
+<path d="M64 174H1376" stroke="#1B2032" stroke-opacity=".22"/>
+<g transform="translate(64 208)">
+  <rect width="310" height="214" rx="18" fill="#D9F45C"/>
+  <text x="24" y="36" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.6" fill="#1B2032">01 / APPLIED AI</text>
+  <text x="24" y="105" font-family="'Bricolage Grotesque',sans-serif" font-size="35" font-weight="800" fill="#1B2032">Useful</text>
+  <text x="24" y="145" font-family="'Instrument Serif',Georgia,serif" font-size="43" font-style="italic" fill="#4949E8">intelligence.</text>
+  <text x="24" y="184" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#2E3344">Assistants, automations and tools</text>
+  <text x="24" y="204" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#2E3344">that help real work move forward.</text>
+  <circle cx="275" cy="28" r="9" fill="#FF704F"><animate attributeName="r" values="7;12;7" dur="3.5s" repeatCount="indefinite"/></circle>
+  <animateTransform attributeName="transform" type="translate" values="64 218;64 208;64 208" keyTimes="0;.2;1" dur="7s" repeatCount="indefinite"/>
+</g>
+<g transform="translate(394 208)">
+  <rect width="310" height="214" rx="18" fill="#5E5AE8"/>
+  <text x="24" y="36" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.6" fill="#D9F45C">02 / DIGITAL PRODUCTS</text>
+  <text x="24" y="105" font-family="'Instrument Serif',Georgia,serif" font-size="40" font-style="italic" fill="#F7F0E5">Thoughtful</text>
+  <text x="24" y="146" font-family="'Bricolage Grotesque',sans-serif" font-size="35" font-weight="800" fill="#D9F45C">systems.</text>
+  <text x="24" y="184" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#F7F0E5">Interfaces, workflows and product</text>
+  <text x="24" y="204" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#F7F0E5">experiments shaped around people.</text>
+  <circle cx="275" cy="28" r="9" fill="#45CDBD"><animate attributeName="cy" values="28;42;28" dur="4s" repeatCount="indefinite"/></circle>
+  <animateTransform attributeName="transform" type="translate" values="394 228;394 208;394 208" keyTimes="0;.25;1" dur="7s" repeatCount="indefinite"/>
+</g>
+<g transform="translate(724 208)">
+  <rect width="310" height="214" rx="18" fill="#FF704F"/>
+  <text x="24" y="36" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.6" fill="#1B2032">03 / BUSINESS</text>
+  <text x="24" y="105" font-family="'Bricolage Grotesque',sans-serif" font-size="35" font-weight="800" fill="#1B2032">Ideas into</text>
+  <text x="24" y="146" font-family="'Instrument Serif',Georgia,serif" font-size="43" font-style="italic" fill="#F7F0E5">practice.</text>
+  <text x="24" y="184" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#2B2A37">Markets, operations and the work</text>
+  <text x="24" y="204" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#2B2A37">of turning plans into useful things.</text>
+  <path d="M270 22L288 40L270 58" fill="none" stroke="#D9F45C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0 0;8 0;0 0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <animateTransform attributeName="transform" type="translate" values="724 238;724 208;724 208" keyTimes="0;.3;1" dur="7s" repeatCount="indefinite"/>
+</g>
+<g transform="translate(1054 208)">
+  <rect width="310" height="214" rx="18" fill="#45CDBD"/>
+  <text x="24" y="36" font-family="'IBM Plex Mono',monospace" font-size="12" letter-spacing="1.6" fill="#1B2032">04 / CREATIVE TECH</text>
+  <text x="24" y="105" font-family="'Caveat',cursive" font-size="46" fill="#1B2032">Design with</text>
+  <text x="24" y="148" font-family="'Bricolage Grotesque',sans-serif" font-size="36" font-weight="800" fill="#5E5AE8">feeling.</text>
+  <text x="24" y="184" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#1B2032">Visual storytelling, motion and</text>
+  <text x="24" y="204" font-family="'Space Grotesk',sans-serif" font-size="15" fill="#1B2032">experiences with a human pulse.</text>
+  <circle cx="274" cy="28" r="10" fill="#F7F0E5"><animate attributeName="r" values="7;11;7" dur="4.5s" repeatCount="indefinite"/></circle>
+  <animateTransform attributeName="transform" type="translate" values="1054 248;1054 208;1054 208" keyTimes="0;.35;1" dur="7s" repeatCount="indefinite"/>
+</g>
+<text x="1375" y="452" text-anchor="end" font-family="'IBM Plex Mono',monospace" font-size="11" letter-spacing="2" fill="#6B6B7D">STAY CURIOUS / KEEP CONNECTING DOTS</text>
+</svg>
