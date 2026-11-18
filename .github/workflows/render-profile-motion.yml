@@ -36,15 +36,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-          package-manager-cache: false
 
       - name: Install rendering tools
         run: |
           npm init -y
           npm install --no-save --no-audit --no-fund playwright@1.65.0
           npx playwright install chromium
+          npx playwright install-deps chromium
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg gifsicle libnss3 libatk1.0-0 libatk-bridge2.0-0 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 libxrandr2 libgbm1 libasound2 libpangocairo-1.0-0 libcups2 libx11-xcb1 libxext6 libxshmfence1
+          sudo apt-get install -y -qq ffmpeg gifsicle
 
       - name: Render animated profile panels
         run: node scripts/render_profile_motion.mjs
